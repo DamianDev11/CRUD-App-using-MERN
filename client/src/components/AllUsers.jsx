@@ -73,8 +73,11 @@ const AllUsers = () => {
                     ))
                 }
             </TableBody>
+
+            <p>Total Users: {users.length}</p>
         </StyledTable>
     )
+
 }
 
 export default AllUsers;

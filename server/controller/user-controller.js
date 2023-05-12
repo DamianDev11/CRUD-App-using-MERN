@@ -21,7 +21,7 @@ export const getUsers = async (request , response ) => {
         const users = await User.find({});
         response.status(200).json(users);
     } catch (error){
-        response.status(404).json({ messgae: error.message });
+        response.status(404).json({ message: error.message });
     }
 }
 
@@ -31,7 +31,7 @@ export const getUser = async (request,response) => {
         const user = await User.findById(request.params.id);
         response.status(200).json(user);
     } catch (error){
-        response.status(404).json({ messgae: error.message });
+        response.status(404).json({ message: error.message });
     }
 }
 
